@@ -28,8 +28,12 @@ sudo apt-get install valgrind
 
 - [x] lab00 Intro and Set Up
 - [x] lab01 Number Rep, C and CGDB
-- [ ] lab02
+- [x] lab02 Advanced C
 - [x] lab03 RISCV Assembly
+=======
+- [x] lab00 Linux, Git commands and Github
+- [x] lab01 Compile and run a C program, use gdb and Valgrind to debug, Pointers and Structures in C
+
 (updating)
 
 ### projects
@@ -39,3 +43,4 @@ sudo apt-get install valgrind
 ### homework
 
 **Not available for non-Berkeley students :sob:**
+
