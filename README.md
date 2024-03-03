@@ -34,7 +34,7 @@ sudo apt-get install valgrind
 (updating)
 
 ### projects
-- [ ] proj00
+- [x] proj0 Conway's Game of Life, in RGB!
 
 (updating)
 ### homework

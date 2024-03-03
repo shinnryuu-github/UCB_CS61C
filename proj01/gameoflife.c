@@ -113,13 +113,14 @@ Color *evaluateOneCell(Image *image, int row, int col, uint32_t rule)
 	if (res == NULL){
 		printf("Error Allocating");
 	}
-	uint8_t *R = &(image->image[row][col].R), *G = &(image->image[row][col].G), *B = &(image->image[row][col].B);
-	next_R(R, image, row, col);
-	next_G(G, image, row, col);
-	next_B(B, image, row, col);
-	res->R = *R;
-	res->G = *G;
-	res->B = *B;
+	uint8_t R = (image->image[row][col].R), G = (image->image[row][col].G), B = (image->image[row][col].B);
+	next_R(&R, image, row, col);
+	next_G(&G, image, row, col);
+	next_B(&B, image, row, col);
+	res->R = R;
+	res->G = G;
+	res->B = B;
+	
 	return res;
 }
 
