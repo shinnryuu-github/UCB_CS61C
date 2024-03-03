@@ -22,14 +22,68 @@
 Color *evaluateOnePixel(Image *image, int row, int col)
 {
 	//YOUR CODE HERE
+	Color *res = (Color *)malloc(sizeof(Color));
+	if (res == NULL){
+		printf("Error Allocating");
+	}
+	Color color = image->image[row][col];
+	uint8_t B = color.B;
+	uint8_t b = B & 0x01;
+	if (b == 1){
+		res->R = 255;
+        res->G = 255;
+        res->B = 255;
+	}
+	else{
+		res->R = 0;
+        res->G = 0;
+        res->B = 0;
+	}
+	return res;
 }
 
 //Given an image, creates a new image extracting the LSB of the B channel.
 Image *steganography(Image *image)
 {
 	//YOUR CODE HERE
+	Image *res = (Image *)malloc(sizeof(Image));
+	if (res == NULL){
+		printf("Error allocating memory\n");
+        return NULL;
+	}
+	res->cols = image->cols;
+	res->rows = image->rows;
+	res->image = (Color**)calloc(res->rows, sizeof(Color*));
+	if (res->image == NULL){
+		printf("Error allocating");
+		return NULL;
+	}
+
+	for (int i = 0; i < res->rows; ++i){
+		res->image[i] = (Color*)calloc(res->cols, sizeof(Color));
+		if (res->image[i] == NULL){
+			printf("Error allocating");
+            return NULL;
+		}
+		for (int j = 0; j < res->cols; ++j){
+			Color *tmp = evaluateOnePixel(image, i, j);
+			res->image[i][j] = *tmp;
+			free(tmp);
+		}
+	}
+
+	return res;
 }
 
+void processCLI(int argc, char **argv, char **filename) 
+{
+	if (argc != 2) {
+		printf("usage: %s filename\n",argv[0]);
+		printf("filename is an ASCII PPM file (type P3) with maximum value 255.\n");
+		exit(-1);
+	}
+	*filename = argv[1];
+}
 /*
 Loads a file of ppm P3 format from a file, and prints to stdout (e.g. with printf) a new image, 
 where each pixel is black if the LSB of the B channel is 0, 
@@ -46,4 +100,16 @@ Make sure to free all memory before returning!
 int main(int argc, char **argv)
 {
 	//YOUR CODE HERE
+	Image *image;
+	char *filename;
+	processCLI(argc,argv,&filename);
+	image = readData(filename);
+	if (image == NULL)
+		return -1;
+	Image *hiddenite = steganography(image);
+	if (hiddenite == NULL)
+		return -1;
+	writeData(hiddenite);
+	freeImage(image);
+	freeImage(hiddenite);
 }
