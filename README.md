@@ -30,6 +30,7 @@ sudo apt-get install valgrind
 - [x] lab01 Number Rep, C and CGDB
 - [x] lab02 Advanced C
 - [x] lab03 RISCV Assembly
+- [x] lab04 RISCV Functions, Pointers
 
 (updating)
 
