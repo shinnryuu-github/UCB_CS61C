@@ -10,10 +10,14 @@
 # =================================================================
 abs:
     # Prologue
+    
 
     # return 0
-    mv a0, zero
-
+    blt a0, zero, minus
+    j exit
+minus:
+    sub a0, zero, a0
+exit:
     # Epilogue
 
     ret
