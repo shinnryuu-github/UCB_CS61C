@@ -31,7 +31,7 @@ sudo apt-get install valgrind
 - [x] lab02 Advanced C
 - [x] lab03 RISCV Assembly
 - [x] lab04 RISCV Functions, Pointers
-
+- [x] lab05 Logisim
 (updating)
 
 ### projects
