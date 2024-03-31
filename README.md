@@ -32,6 +32,7 @@ sudo apt-get install valgrind
 - [x] lab03 RISCV Assembly
 - [x] lab04 RISCV Functions, Pointers
 - [x] lab05 Logisim
+- [x] lab06 Pipelining and CPU
 (updating)
 
 ### projects
