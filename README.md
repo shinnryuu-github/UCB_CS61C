@@ -38,7 +38,7 @@ sudo apt-get install valgrind
 ### projects
 - [x] proj01 Conway's Game of Life, in RGB!
 - [x] proj02 CS61Classify
-- [ ] proj03 CS61CPU
+- [x] proj03 CS61CPU
 (updating)
 ### homework
 
