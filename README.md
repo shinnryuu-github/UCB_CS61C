@@ -33,6 +33,7 @@ sudo apt-get install valgrind
 - [x] lab04 RISCV Functions, Pointers
 - [x] lab05 Logisim
 - [x] lab06 Pipelining and CPU
+- [x] lab07 Caches
 (updating)
 
 ### projects
