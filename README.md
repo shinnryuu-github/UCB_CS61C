@@ -41,7 +41,7 @@ sudo apt-get install valgrind
 - [x] proj01 Conway's Game of Life, in RGB!
 - [x] proj02 CS61Classify
 - [x] proj03 CS61CPU
-(updating)
+- [ ] proj04 Numc
 ### homework
 
 **Not available for non-Berkeley students :sob:**
