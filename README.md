@@ -34,6 +34,7 @@ sudo apt-get install valgrind
 - [x] lab05 Logisim
 - [x] lab06 Pipelining and CPU
 - [x] lab07 Caches
+- [x] lab08 OS (context switch), I/O, DMA, Disks, Networking & Virtual Memory
 (updating)
 
 ### projects
