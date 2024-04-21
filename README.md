@@ -35,13 +35,14 @@ sudo apt-get install valgrind
 - [x] lab06 Pipelining and CPU
 - [x] lab07 Caches
 - [x] lab08 OS (context switch), I/O, DMA, Disks, Networking & Virtual Memory
+- [x] lab09 SIMD Instructions
 (updating)
 
 ### projects
 - [x] proj01 Conway's Game of Life, in RGB!
 - [x] proj02 CS61Classify
 - [x] proj03 CS61CPU
-- [ ] proj04 Numc
+- [ ] proj04 Numc (Not Available)
 ### homework
 
 **Not available for non-Berkeley students :sob:**
