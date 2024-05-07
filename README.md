@@ -36,6 +36,7 @@ sudo apt-get install valgrind
 - [x] lab07 Caches
 - [x] lab08 OS (context switch), I/O, DMA, Disks, Networking & Virtual Memory
 - [x] lab09 SIMD Instructions
+- [x] lab10 Thread Level Parallelism
 (updating)
 
 ### projects
