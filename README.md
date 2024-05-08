@@ -37,7 +37,7 @@ sudo apt-get install valgrind
 - [x] lab08 OS (context switch), I/O, DMA, Disks, Networking & Virtual Memory
 - [x] lab09 SIMD Instructions
 - [x] lab10 Thread Level Parallelism
-(updating)
+- [ ] lab11 Spark/Dependability (Not Available)
 
 ### projects
 - [x] proj01 Conway's Game of Life, in RGB!
